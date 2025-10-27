@@ -135,3 +135,5 @@ gb_rus_accuracy = accuracy_score(y_test_rus, gb_classifier_rus.predict(X_test_ru
 gb_rus_f1 = f1_score(y_test_rus, gb_classifier_rus.predict(X_test_rus))
 print('GB RUS Dataset   Accuracy, F1 Score')
 print(f'                 {gb_rus_accuracy*100:.2f}%    {gb_rus_f1*100:.2f}%')
+
+# TODO: add AUCROC metric and predict before computing scores for efficiency
