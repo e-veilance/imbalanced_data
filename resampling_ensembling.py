@@ -19,7 +19,7 @@ df['Residence_type'] = df['Residence_type'].astype('category')
 cat_columns = df.select_dtypes(['category']).columns
 df[cat_columns] = df[cat_columns].apply(lambda x: x.cat.codes)
 
-# seperate features and target
+# separate features and target
 y = df['stroke']
 X = df.drop(columns=['id','stroke'])
 #print(y.head)
